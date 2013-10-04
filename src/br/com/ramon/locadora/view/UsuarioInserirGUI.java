@@ -91,8 +91,8 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
         gruposexo.add(rbfeminino);
         rbfeminino.setText("Feminino");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/ramon/locadora/view/add.png"))); // NOI18N
-        jLabel8.setToolTipText("salvar");
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/ramon/locadora/view/addm.png"))); // NOI18N
+        jLabel8.setToolTipText("Salvar");
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/ramon/locadora/view/limpar.png"))); // NOI18N
         jLabel9.setToolTipText("Limpar");
