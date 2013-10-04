@@ -26,6 +26,7 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        gruposexo = new javax.swing.ButtonGroup();
         painelfundo = new javax.swing.JPanel();
         label1 = new javax.swing.JLabel();
         txlogin = new javax.swing.JTextField();
@@ -42,8 +43,10 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         txdata = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        btmasculino = new javax.swing.JRadioButton();
-        btfeminino = new javax.swing.JRadioButton();
+        rbmasculino = new javax.swing.JRadioButton();
+        rbfeminino = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,9 +83,19 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
 
         jLabel7.setText("Sexo :");
 
-        btmasculino.setText("Masculino");
+        rbmasculino.setBackground(new java.awt.Color(255, 255, 255));
+        gruposexo.add(rbmasculino);
+        rbmasculino.setText("Masculino");
 
-        btfeminino.setText("Feminino");
+        rbfeminino.setBackground(new java.awt.Color(255, 255, 255));
+        gruposexo.add(rbfeminino);
+        rbfeminino.setText("Feminino");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/ramon/locadora/view/add.png"))); // NOI18N
+        jLabel8.setToolTipText("salvar");
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/ramon/locadora/view/limpar.png"))); // NOI18N
+        jLabel9.setToolTipText("Limpar");
 
         javax.swing.GroupLayout painelfundoLayout = new javax.swing.GroupLayout(painelfundo);
         painelfundo.setLayout(painelfundoLayout);
@@ -91,35 +104,44 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
             .addGroup(painelfundoLayout.createSequentialGroup()
                 .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(painelfundoLayout.createSequentialGroup()
-                        .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(label1)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel2))
-                        .addGap(28, 28, 28)
-                        .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txsenha, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txnome, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txcodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(painelfundoLayout.createSequentialGroup()
-                                .addComponent(txcpf, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel6)
-                                .addGap(18, 18, 18)
-                                .addComponent(txdata, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(painelfundoLayout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
                         .addComponent(txtelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(painelfundoLayout.createSequentialGroup()
-                        .addComponent(jLabel7)
+                        .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, painelfundoLayout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(18, 18, 18)
+                                .addComponent(rbmasculino)
+                                .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelfundoLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel8))
+                                    .addGroup(painelfundoLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(rbfeminino))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, painelfundoLayout.createSequentialGroup()
+                                .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(label1)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel2))
+                                .addGap(28, 28, 28)
+                                .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txsenha, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txnome, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txcodigo1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(painelfundoLayout.createSequentialGroup()
+                                        .addComponent(txcpf, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel6)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txdata, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(18, 18, 18)
-                        .addComponent(btmasculino)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btfeminino)))
-                .addGap(0, 76, Short.MAX_VALUE))
+                        .addComponent(jLabel9)))
+                .addGap(0, 38, Short.MAX_VALUE))
         );
         painelfundoLayout.setVerticalGroup(
             painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,9 +175,13 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(btmasculino)
-                    .addComponent(btfeminino))
-                .addContainerGap(50, Short.MAX_VALUE))
+                    .addComponent(rbmasculino)
+                    .addComponent(rbfeminino))
+                .addGap(18, 18, 18)
+                .addGroup(painelfundoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -207,8 +233,7 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton btfeminino;
-    private javax.swing.JRadioButton btmasculino;
+    private javax.swing.ButtonGroup gruposexo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -216,8 +241,12 @@ public class UsuarioInserirGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel label1;
     private javax.swing.JPanel painelfundo;
+    private javax.swing.JRadioButton rbfeminino;
+    private javax.swing.JRadioButton rbmasculino;
     private javax.swing.JTextField txcodigo1;
     private javax.swing.JTextField txcpf;
     private javax.swing.JTextField txdata;
